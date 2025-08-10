@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvesh Girish Deshmukh - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            max-width: 1200px;
+            margin: 40px auto;
+            background: #fff;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        aside {
+            background: #f9f9f9;
+            padding: 30px;
+            border-right: 1px solid #e0e0e0;
+        }
+        main {
+            padding: 30px;
+        }
+        .sidebar-section h2 {
+            background: #ffd700; /* Yellow background for sidebar headings */
+            color: #333;
+            padding: 10px 15px;
+            margin: 20px 0 10px;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            border-radius: 4px;
+            font-weight: 700;
+        }
+        .sidebar-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar-section li {
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+        header h1 {
+            font-size: 2.2em;
+            color: #000; /* Black for name */
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        header .title {
+            font-size: 1.6em;
+            color: #007bff; /* Blue for title */
+            margin: 5px 0;
+            font-weight: 700;
+        }
+        main h2 {
+            color: #007bff; /* Blue for main headings */
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 1.4em;
+            font-weight: 700;
+        }
+        .targeting {
+            font-style: italic;
+            margin: 10px 0;
+            color: #555;
+            font-size: 1em;
+        }
+        .experience-item h3 {
+            font-size: 1.3em;
+            color: #333;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        .experience-item .dates {
+            font-style: italic;
+            color: #666;
+            font-size: 0.95em;
+        }
+        ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+        ul li {
+            margin-bottom: 6px;
+        }
+        .skills-list {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+            column-gap: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 0.95em;
+        }
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .education-item {
+            margin-bottom: 15px;
+        }
+        .education-item strong {
+            display: block;
+            font-weight: 700;
+            color: #333;
+        }
+        .education-item p {
+            margin: 2px 0;
+            font-size: 0.95em;
+        }
+        strong {
+            font-weight: 700;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f9f9f9;
+            border-top: 1px solid #e0e0e0;
+            grid-column: span 2;
+            font-size: 0.9em;
+            color: #666;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            aside {
+                border-right: none;
+                border-bottom: 1px solid #e0e0e0;
+                padding: 20px;
+            }
+            main {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <section class="sidebar-section" id="contact">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <p>+91-9004893447</p>
+                    <p>sarvesh.deshmukh741@gmail.com</p>
+                    <p>Thane, Maharashtra, India</p>
+                    <p><a href="https://www.linkedin.com/in/sarvesh-deshmukh-684704223/" target="_blank">LinkedIn</a></p>
+                </div>
+            </section>
+
+            <section class="sidebar-section" id="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <strong>2025</strong>
+                    <p>Master of Science Project Management, GPA: 3.81 / 4.00</p>
+                    <p>University of The Cumberlands, Plaster Graduate School of Business, KY</p>
+                </div>
+                <div class="education-item">
+                    <strong>2020</strong>
+                    <p>Master of Science in Industrial and Systems Engineering, GPA: 3.64 / 4.00</p>
+                    <p>Binghamton University, State University of New York, Watson School of Engineering</p>
+                </div>
+                <div class="education-item">
+                    <strong>2016</strong>
+                    <p>Bachelor of Engineering in Instrumentation Engineering, GPA: 3.00 / 4.00</p>
+                    <p>Mumbai University, Bharati Vidyapeeth College of Engineering, India</p>
+                </div>
+            </section>
+
+            <section class="sidebar-section" id="it-skills">
+                <h2>IT Skills</h2>
+                <p>Softwares: JIRA, Confluence, MS Office Suite, Figma, MS Visio, Lucidchart, Draw.io, Power BI, Postman, HP ALM, Octane ALM, Microsoft SQL Server, Simio, Python, Julia, R, JQL, Balsamiq</p>
+            </section>
+
+            <section class="sidebar-section" id="core-competencies">
+                <h2>Core Competencies</h2>
+                <ul class="skills-list">
+                    <li>Business Process Optimization</li>
+                    <li>Requirements Elicitation</li>
+                    <li>Agile Project Management</li>
+                    <li>Stakeholder Engagement</li>
+                    <li>Quality Assurance</li>
+                    <li>Change Management</li>
+                    <li>Risk Mitigation</li>
+                    <li>Continuous Improvement</li>
+                    <li>Data Analysis</li>
+                    <li>Cross-Functional Team Collaboration</li>
+                </ul>
+            </section>
+
+            <section class="sidebar-section" id="soft-skills">
+                <h2>Soft Skills</h2>
+                <ul>
+                    <li>Adaptable</li>
+                    <li>Analytical</li>
+                    <li>Team Player</li>
+                    <li>Detail-oriented</li>
+                    <li>Communicator</li>
+                </ul>
+            </section>
+
+            <section class="sidebar-section" id="awards-highlights">
+                <h2>Awards & Highlights</h2>
+                <ul>
+                    <li>Achieved a remarkable reduction in manual processing time by 30% through the identification of inefficiencies and the implementation of automation solutions for various promotional campaigns.</li>
+                    <li>Streamlined the requirements gathering and user story writing process, effectively cutting the initiation and grooming time from three weeks to just one week, significantly enhancing project efficiency.</li>
+                    <li>Acted as a crucial liaison between business, billing, and API teams, ensuring the timely delivery of three major integration projects, thereby enhancing operational effectiveness.</li>
+                    <li>Increased the speed of QA defect resolution by 35% through the provision of clear acceptance criteria and prompt clarifications during the testing phases.</li>
+                    <li>Successfully migrated acceptance criteria for all user stories from Use Case format to Gherkin format, training over five junior Business Analysts in the new methodology within a two-week timeframe.</li>
+                </ul>
+            </section>
+        </aside>
+
+        <main>
+            <header>
+                <h1>SARVESH GIRISH DESHMUKH</h1>
+                <p class="title">Business Systems Analyst</p>
+                <p class="targeting">Targeting to leverage deep expertise in business systems analysis, Agile methodologies, and stakeholder collaboration to drive strategic initiatives, enhance product delivery, and enable data-driven decision-making in a Senior Business Analyst, Product Owner, or Scrum Master role within a growth-focused and innovation-driven organization.</p>
+            </header>
+
+            <section id="profile-summary">
+                <h2>Profile Summary</h2>
+                <ul>
+                    <li>Accomplished Business Systems Analyst with over 4 years of cross-functional experience in driving end-to-end business solutions, requirements elicitation, and process reengineering across Agile (SAFe, Scrum) and hybrid SDLC environments, primarily in the Telecom Domain.</li>
+                    <li>Proven track record of accelerating project initiation by 50% through streamlining elicitation and grooming processes, significantly enhancing delivery velocity and stakeholder satisfaction.</li>
+                    <li>Expert at translating complex business requirements into scalable solutions by developing user stories, BRDs, BPMN models, wireframes, and Gherkin-based acceptance criteria using JIRA, Confluence, and Visio.</li>
+                    <li>Exhibited leadership in managing stakeholder communications across onshore-offshore models, mentoring junior analysts, and driving cross-functional alignment in fast-paced, release-driven environments.</li>
+                    <li>Strong command over pre-order/back-order campaign tooling, promotions engine, and agent-facing systems within large-scale telecom architectures, ensuring timely feature rollouts with minimal defects.</li>
+                    <li>Experienced in API validation, UI/UX testing, and data analysis with tools like Postman, SQL, and Power BI to ensure quality delivery and informed business decision-making.</li>
+                    <li>Certified Scrum Master with expertise in backlog prioritization (MoSCoW Technique), sprint planning, UAT coordination, and release management, enabling seamless integration between product vision and technical execution.</li>
+                </ul>
+            </section>
+
+            <section id="certifications">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Scrum Master (International Scrum Institute, 2021)</li>
+                    <li>Project Management Essentials (Binghamton University, 2021)</li>
+                    <li>Green Belt Lean Six Sigma (Binghamton University, 2019)</li>
+                </ul>
+            </section>
+
+            <section id="work-experience">
+                <h2>Work Experience</h2>
+                <div class="experience-item">
+                    <h3>Business Systems Analyst, Cloud Data LLC, Knoxville, TN</h3>
+                    <p class="dates">Aug’23 – May’25</p>
+                    <p>Client: Charter Communications – St. Louis, MO</p>
+                    <p>Environment: SAFe environment, Scrum team, eTOM framework, MS Visio, Figma, MS SharePoint, JIRA, CHALK (Confluence), Octane ALM, Postman</p>
+                    <strong>Key Result Areas:</strong>
+                    <ul>
+                        <li>Led requirements elicitation and analysis for in-house tools supporting ordering buyflow, account management, promotions, and billing processes in the Spectrum Mobile Line of Business.</li>
+                        <li>Delivered functional specifications for tools related to new device acquisition, BYOD, returns/exchanges, and pre-order/back-order campaigns to optimize agent-customer interactions.</li>
+                        <li>Facilitated end-to-end documentation including BRDs, user stories, BPMN diagrams, and UI wireframes using JIRA, Visio, and Figma in a SAFe Agile environment.</li>
+                        <li>Supported the Product Owner in backlog grooming and sprint planning, ensuring prioritization through MoSCoW Technique and adherence to Definition of Done.</li>
+                        <li>Conducted API testing with Postman and validated UI elements to assist QA and UX teams in finalizing seamless interfaces.</li>
+                        <li>Collaborated with architecture and billing teams to integrate third-party vendor systems and deliver scalable solutions for real-time customer engagement.</li>
+                    </ul>
+                    <strong>Highlights:</strong>
+                    <ul>
+                        <li>Reduced business requirement gathering and grooming timeline by 50%, increasing project delivery efficiency and enabling earlier development cycles.</li>
+                        <li>Migrated user stories from traditional use case format to Gherkin format and trained over 5 junior analysts, enhancing team-wide standardization and clarity.</li>
+                        <li>Accelerated QA defect resolution by 35% through prompt clarifications, comprehensive acceptance criteria, and proactive stakeholder coordination.</li>
+                        <li>Enabled KPI-driven decision-making by contributing to SQL-based data validation workflows for video resolution tracking and business intelligence dashboards.</li>
+                        <li>Supported UAT processes and ensured release-readiness of key modules through structured test case reviews and defect traceability mapping.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Business Systems Analyst, Endeavour Technologies Inc., Chantilly, VA</h3>
+                    <p class="dates">Nov’21 – Aug’23</p>
+                    <p>Environment: SAFe environment, Scrum team, eTOM framework, MS Visio, Figma, MS SharePoint, JIRA, CHALK(Confluence), HP ALM, Octane ALM, Postman</p>
+                    <strong>Key Result Areas:</strong>
+                    <ul>
+                        <li>Conducted requirement-gathering sessions using JAD, interviews, and document analysis to develop BRDs and user stories for the agent-facing order management system.</li>
+                        <li>Created BPMN diagrams for as-is and to-be workflows and facilitated process improvements based on GAP analysis aligned with eTOM standards.</li>
+                        <li>Translated business needs into actionable user stories with INVEST criteria and defined acceptance criteria in both use case and Gherkin formats using JIRA.</li>
+                        <li>Reviewed wireframes with UX teams and ensured accurate documentation of design changes in collaboration with cross-functional stakeholders.</li>
+                        <li>Partnered with QA and SIT teams to support test case creation, test execution, and UAT validation across sprint cycles.</li>
+                    </ul>
+                    <strong>Highlights:</strong>
+                    <ul>
+                        <li>Established a structured methodology for writing user stories in Gherkin format, resulting in higher consistency and reduced onboarding time for new analysts.</li>
+                        <li>Improved inter-team collaboration and data-driven reporting by coordinating API integrations with the Data Hub Team for Power BI dashboards.</li>
+                        <li>Ensured seamless defect migration and traceability by managing the transition of test artifacts from HP ALM to Octane ALM.</li>
+                        <li>Actively supported MVP development and successful delivery of monthly bundled releases by aligning development priorities with business expectations.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Business Systems Analyst, Colsh Consultants LLC, Monmouth Junction, NJ</h3>
+                    <p class="dates">Apr’21 – Oct’21</p>
+                    <p>Environment: Scrum - Waterfall Hybrid, JIRA, Confluence, MS Visio, MS Office, Balsamiq, Swagger, Postman, Power BI</p>
+                    <strong>Key Result Areas:</strong>
+                    <ul>
+                        <li>Gathered functional and non-functional requirements through interviews, JAD sessions, and document analysis for HR and payroll system enhancement projects.</li>
+                        <li>Developed Business Requirement Documents (BRDs) and Functional Requirement Documents (FRDs) for multiple integration workflows including Oracle HCM Fusion, ADP Vantage, and Cartus-Fannie Mae.</li>
+                        <li>Created UML diagrams (Use Case, Activity, Sequence) using Draw.io to represent workflow logic and user interactions across modules.</li>
+                        <li>Collaborated with UI/UX teams to review and refine wireframes and mockups using Balsamiq for usability and process alignment.</li>
+                        <li>Conducted user story grooming sessions with development and QA teams to ensure accurate understanding and story point estimations.</li>
+                    </ul>
+                    <strong>Highlights:</strong>
+                    <ul>
+                        <li>Enabled visibility and traceability of business requirements by maintaining comprehensive document repositories on Confluence.</li>
+                        <li>Strengthened QA support by assisting in test planning, regression testing, and integration testing, ensuring alignment with business use cases.</li>
+                        <li>Delivered actionable insights by extracting and analyzing multi-table datasets using SQL and presenting key business metrics through Power BI dashboards.</li>
+                        <li>Contributed to automation initiatives such as deferred salary processing using Alteryx workflows, reducing manual intervention and increasing accuracy.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="volunteering">
+                <h2>Volunteering Experience</h2>
+                <div class="experience-item">
+                    <h3>Graduate Research Assistant (Volunteer), Watson School of Engineering, Binghamton University, NY</h3>
+                    <p class="dates">Jul’20 – Apr’21</p>
+                    <strong>Key Result Areas:</strong>
+                    <ul>
+                        <li>Conducted extensive literature review and information extraction from over 900 academic articles focused on Metaheuristic algorithms and Deep learning methodologies.</li>
+                        <li>Organized and classified research materials into a structured digital repository to enable streamlined access for academic analysis and further study.</li>
+                        <li>Collaborated with faculty to design and structure knowledge presentations for ongoing research initiatives in computational intelligence.</li>
+                        <li>Created comprehensive presentation decks covering 23 distinct types of Metaheuristic algorithms, contributing to curriculum enhancement and peer learning.</li>
+                        <li>Improved data accessibility and research efficiency by systematizing academic content into clearly labeled categories and thematic clusters.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="internship">
+                <h2>Internship</h2>
+                <div class="experience-item">
+                    <h3>Instrumentation Engineering Intern, Technip India Ltd., Maharashtra, India</h3>
+                    <p class="dates">Jun'15 – Jul'15</p>
+                    <ul>
+                        <li>Executed updates on 30+ specification sheets and 11 instrument index sheets using SmartPlant Instrumentation (SPI), ensuring improved accuracy and compliance in instrumentation documentation.</li>
+                        <li>Assisted risk management and D&P Teams in conducting root cause analysis and safety hazard assessments by developing Ishikawa diagrams and FMEA models, enhancing process reliability and safety planning.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Sarvesh Girish Deshmukh. All rights reserved.</p>
+            <p><a href="Sarvesh Deshmukh - Resume.pdf" download>Download PDF Resume</a></p>
+        </footer>
+    </div>
+</body>
+</html>
