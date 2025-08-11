@@ -2,13 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarvesh Girish Deshmukh - Resume</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            box-sizing: border-box;
-        }
         body {
             font-family: 'Roboto', Arial, sans-serif;
             margin: 0;
@@ -16,14 +13,12 @@
             background-color: #f8f9fa;
             color: #333;
             line-height: 1.6;
-            word-break: break-word;
-            hyphens: auto;
         }
         .container {
             display: grid;
             grid-template-columns: 1fr 2fr;
             max-width: 1200px;
-            margin: 20px auto;
+            margin: 40px auto;
             background: #fff;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
             border-radius: 8px;
@@ -31,18 +26,18 @@
         }
         aside {
             background: #f9f9f9;
-            padding: 20px;
+            padding: 30px;
             border-right: 1px solid #e0e0e0;
         }
         main {
-            padding: 20px;
+            padding: 30px;
         }
         .sidebar-section h2 {
             background: #ffd700; /* Yellow background for sidebar headings */
             color: #333;
-            padding: 8px 12px;
-            margin: 15px 0 8px;
-            font-size: 1em;
+            padding: 10px 15px;
+            margin: 20px 0 10px;
+            font-size: 1.1em;
             text-transform: uppercase;
             border-radius: 4px;
             font-weight: 700;
@@ -52,18 +47,18 @@
             padding: 0;
         }
         .sidebar-section li {
-            margin-bottom: 6px;
-            font-size: 0.9em;
+            margin-bottom: 8px;
+            font-size: 0.95em;
         }
         header h1 {
-            font-size: 1.8em;
+            font-size: 2.2em;
             color: #000; /* Black for name */
             margin: 0;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
         header .title {
-            font-size: 1.4em;
+            font-size: 1.6em;
             color: #007bff; /* Blue for title */
             margin: 5px 0;
             font-weight: 700;
@@ -71,45 +66,44 @@
         main h2 {
             color: #007bff; /* Blue for main headings */
             border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 8px;
-            margin-top: 25px;
-            font-size: 1.2em;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 1.4em;
             font-weight: 700;
         }
         .targeting {
             font-style: italic;
-            margin: 8px 0;
+            margin: 10px 0;
             color: #555;
-            font-size: 0.95em;
+            font-size: 1em;
         }
         .experience-item h3 {
-            font-size: 1.1em;
+            font-size: 1.3em;
             color: #333;
-            margin-bottom: 4px;
+            margin-bottom: 5px;
             font-weight: 700;
         }
         .experience-item .dates {
             font-style: italic;
             color: #666;
-            font-size: 0.9em;
+            font-size: 0.95em;
         }
         ul {
-            padding-left: 15px;
+            padding-left: 20px;
             list-style-type: disc;
         }
         ul li {
-            margin-bottom: 5px;
-            font-size: 0.9em;
+            margin-bottom: 6px;
         }
         .skills-list {
             columns: 2;
             -webkit-columns: 2;
             -moz-columns: 2;
-            column-gap: 15px;
+            column-gap: 20px;
         }
         .contact-info p {
-            margin: 4px 0;
-            font-size: 0.9em;
+            margin: 5px 0;
+            font-size: 0.95em;
         }
         .contact-info a {
             color: #007bff;
@@ -119,17 +113,16 @@
             text-decoration: underline;
         }
         .education-item {
-            margin-bottom: 12px;
+            margin-bottom: 15px;
         }
         .education-item strong {
             display: block;
             font-weight: 700;
             color: #333;
-            font-size: 0.95em;
         }
         .education-item p {
             margin: 2px 0;
-            font-size: 0.85em;
+            font-size: 0.95em;
         }
         strong {
             font-weight: 700;
@@ -137,11 +130,11 @@
         }
         footer {
             text-align: center;
-            padding: 15px;
+            padding: 20px;
             background: #f9f9f9;
             border-top: 1px solid #e0e0e0;
             grid-column: span 2;
-            font-size: 0.85em;
+            font-size: 0.9em;
             color: #666;
         }
         footer a {
@@ -152,75 +145,17 @@
         footer a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 1024px) {
+        @media (max-width: 768px) {
             .container {
                 grid-template-columns: 1fr;
-                margin: 10px;
             }
             aside {
                 border-right: none;
                 border-bottom: 1px solid #e0e0e0;
-                padding: 15px;
+                padding: 20px;
             }
             main {
-                padding: 15px;
-            }
-            .skills-list {
-                columns: 1;
-            }
-            header h1 {
-                font-size: 1.6em;
-            }
-            header .title {
-                font-size: 1.2em;
-            }
-            main h2 {
-                font-size: 1.1em;
-            }
-            ul {
-                padding-left: 10px;
-            }
-            .experience-item h3 {
-                font-size: 1em;
-            }
-            .sidebar-section h2 {
-                font-size: 0.95em;
-                padding: 6px 10px;
-            }
-            .targeting {
-                font-size: 0.9em;
-            }
-            body {
-                font-size: 14px; /* Slightly smaller base font for mobile */
-            }
-        }
-        @media (max-width: 768px) {
-            .container {
-                margin: 5px;
-            }
-            aside, main {
-                padding: 12px;
-            }
-            body {
-                font-size: 13px;
-            }
-            ul li {
-                font-size: 0.85em;
-            }
-            .sidebar-section li {
-                font-size: 0.85em;
-            }
-        }
-        @media (max-width: 480px) {
-            .container {
-                margin: 0;
-                border-radius: 0;
-            }
-            aside, main {
-                padding: 10px;
-            }
-            footer {
-                padding: 10px;
+                padding: 20px;
             }
         }
     </style>
