@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1200, initial-scale=1.0">
     <title>Sarvesh Girish Deshmukh - Resume</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -18,10 +18,11 @@
             line-height: 1.6;
             word-break: break-word;
             hyphens: auto;
+            overflow: auto; /* Enable scrollbars on body if needed */
         }
         .container {
             display: flex;
-            max-width: 1200px;
+            width: 1200px; /* Fixed width to match desktop/PDF layout */
             margin: 20px auto;
             background: #fff;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -33,11 +34,12 @@
             background: #f9f9f9;
             padding: 20px;
             border-right: 1px solid #e0e0e0;
-            min-width: 250px; /* Prevent squishing on larger screens */
+            min-width: 300px; /* Prevent squishing */
         }
         main {
             flex: 2;
             padding: 20px;
+            min-width: 800px; /* Prevent squishing */
         }
         .sidebar-section h2 {
             background: #ffd700; /* Yellow background for sidebar headings */
@@ -125,7 +127,7 @@
             gap: 10px;
         }
         .skills-list li {
-            flex: 1 1 45%; /* Two columns with flex */
+            flex: 1 1 45%; /* Two columns */
         }
         .contact-info p {
             margin: 4px 0;
@@ -172,78 +174,7 @@
         footer a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 1024px) {
-            .container {
-                flex-direction: column;
-                margin: 10px;
-            }
-            aside {
-                border-right: none;
-                border-bottom: 1px solid #e0e0e0;
-                min-width: auto;
-            }
-            .skills-list li {
-                flex: 1 1 100%; /* Single column on smaller screens */
-            }
-        }
-        @media (max-width: 768px) {
-            aside, main {
-                padding: 15px;
-            }
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-            .profile-photo {
-                width: 120px;
-                height: 120px;
-                margin: 0 auto;
-            }
-            body {
-                font-size: 14px;
-            }
-            header h1 {
-                font-size: 1.6em;
-            }
-            header .title {
-                font-size: 1.2em;
-            }
-            main h2 {
-                font-size: 1.1em;
-            }
-            ul {
-                padding-left: 10px;
-            }
-            .experience-item h3 {
-                font-size: 1em;
-            }
-            .sidebar-section h2 {
-                font-size: 0.95em;
-                padding: 6px 10px;
-            }
-            .targeting {
-                font-size: 0.9em;
-            }
-        }
-        @media (max-width: 480px) {
-            .container {
-                margin: 5px;
-                border-radius: 0;
-            }
-            aside, main {
-                padding: 12px;
-            }
-            .profile-photo {
-                width: 100px;
-                height: 100px;
-            }
-            body {
-                font-size: 13px;
-            }
-            ul li, .sidebar-section li {
-                font-size: 0.85em;
-            }
-        }
+        /* No media queries for stacking; force side-by-side with scrollbars */
     </style>
 </head>
 <body>
@@ -451,11 +382,10 @@
                 </div>
             </section>
         </main>
-
-        <footer>
-            <p>&copy; 2025 Sarvesh Girish Deshmukh. All rights reserved.</p>
-            <p><a href="Sarvesh Deshmukh - Resume.pdf" download>Download PDF Resume</a></p>
-        </footer>
     </div>
+    <footer>
+        <p>&copy; 2025 Sarvesh Girish Deshmukh. All rights reserved.</p>
+        <p><a href="Sarvesh Deshmukh - Resume.pdf" download>Download PDF Resume</a></p>
+    </footer>
 </body>
 </html>
