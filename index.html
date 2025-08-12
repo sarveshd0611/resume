@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarvesh Girish Deshmukh - Resume</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -20,8 +20,7 @@
             hyphens: auto;
         }
         .container {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
+            display: flex;
             max-width: 1200px;
             margin: 20px auto;
             background: #fff;
@@ -30,11 +29,14 @@
             overflow: hidden;
         }
         aside {
+            flex: 1;
             background: #f9f9f9;
             padding: 20px;
             border-right: 1px solid #e0e0e0;
+            min-width: 250px; /* Prevent squishing on larger screens */
         }
         main {
+            flex: 2;
             padding: 20px;
         }
         .sidebar-section h2 {
@@ -118,10 +120,12 @@
             font-size: 0.9em;
         }
         .skills-list {
-            columns: 2;
-            -webkit-columns: 2;
-            -moz-columns: 2;
-            column-gap: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills-list li {
+            flex: 1 1 45%; /* Two columns with flex */
         }
         .contact-info p {
             margin: 4px 0;
@@ -156,7 +160,7 @@
             padding: 15px;
             background: #f9f9f9;
             border-top: 1px solid #e0e0e0;
-            grid-column: span 2;
+            width: 100%;
             font-size: 0.85em;
             color: #666;
         }
@@ -168,17 +172,22 @@
         footer a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             .container {
-                grid-template-columns: 1fr;
+                flex-direction: column;
                 margin: 10px;
             }
             aside {
                 border-right: none;
                 border-bottom: 1px solid #e0e0e0;
-                padding: 15px;
+                min-width: auto;
             }
-            main {
+            .skills-list li {
+                flex: 1 1 100%; /* Single column on smaller screens */
+            }
+        }
+        @media (max-width: 768px) {
+            aside, main {
                 padding: 15px;
             }
             header {
@@ -189,12 +198,6 @@
                 width: 120px;
                 height: 120px;
                 margin: 0 auto;
-            }
-            .skills-list {
-                columns: 1;
-            }
-            ul {
-                padding-left: 10px;
             }
             body {
                 font-size: 14px;
@@ -207,6 +210,9 @@
             }
             main h2 {
                 font-size: 1.1em;
+            }
+            ul {
+                padding-left: 10px;
             }
             .experience-item h3 {
                 font-size: 1em;
@@ -295,7 +301,7 @@
 
             <section class="sidebar-section" id="soft-skills">
                 <h2>Soft Skills</h2>
-                <ul>
+                <ul class="skills-list">
                     <li>Adaptable</li>
                     <li>Analytical</li>
                     <li>Team Player</li>
