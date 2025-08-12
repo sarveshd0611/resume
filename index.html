@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1200, initial-scale=1.0">
+    <meta name="viewport" content="width=1200">
     <title>Sarvesh Girish Deshmukh - Resume</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -18,11 +18,13 @@
             line-height: 1.6;
             word-break: break-word;
             hyphens: auto;
-            overflow: auto; /* Enable scrollbars on body if needed */
+            overflow-x: auto; /* Enable horizontal scrollbar */
+            overflow-y: auto; /* Enable vertical scrollbar if needed */
+            min-width: 1200px; /* Force minimum width for body */
         }
         .container {
             display: flex;
-            width: 1200px; /* Fixed width to match desktop/PDF layout */
+            width: 1200px;
             margin: 20px auto;
             background: #fff;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -30,16 +32,14 @@
             overflow: hidden;
         }
         aside {
-            flex: 1;
+            flex: 1 0 300px; /* flex-grow:1, flex-shrink:0, flex-basis:300px */
             background: #f9f9f9;
             padding: 20px;
             border-right: 1px solid #e0e0e0;
-            min-width: 300px; /* Prevent squishing */
         }
         main {
-            flex: 2;
+            flex: 2 0 800px; /* flex-grow:2, flex-shrink:0, flex-basis:800px */
             padding: 20px;
-            min-width: 800px; /* Prevent squishing */
         }
         .sidebar-section h2 {
             background: #ffd700; /* Yellow background for sidebar headings */
@@ -162,7 +162,8 @@
             padding: 15px;
             background: #f9f9f9;
             border-top: 1px solid #e0e0e0;
-            width: 100%;
+            width: 1200px;
+            margin: 0 auto;
             font-size: 0.85em;
             color: #666;
         }
@@ -174,7 +175,6 @@
         footer a:hover {
             text-decoration: underline;
         }
-        /* No media queries for stacking; force side-by-side with scrollbars */
     </style>
 </head>
 <body>
@@ -255,7 +255,7 @@
 
         <main>
             <header>
-                <img src="21886.jpg" alt="Sarvesh Deshmukh" class="profile-photo">
+                <img src="profile.jpg" alt="Sarvesh Deshmukh" class="profile-photo">
                 <div class="header-text">
                     <h1>SARVESH GIRISH DESHMUKH</h1>
                     <p class="title">Business Systems Analyst</p>
